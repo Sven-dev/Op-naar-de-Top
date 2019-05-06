@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: 
-    ufoLicenseKey: QWVYNE00VC8vLy8vQUFBQUtNbk5VbCtoS2tQdGlYbzhGRzNTUnNrS0IyOEFZb3JudUZYUTA1c0NqdnlsaU50Tk41SUJkaVdIeGphQjFaSkt6elo5UWwwV0ZBRVh4ZUtuODhlUDJRV2VYWjRvNGJqUFhjQ0wwcGNJV0VBSkJvcURwVnhBamQ5cDFaclBsZjVPL1NyNGZiNkFrejFnT21ObmlEOFRtMlYwSVpKanRDeFh0ZDZDeDExMUNtVGhnT3QzWW1pdTZsQmEyL3h0TmUrYzlZdWd1aU1vWFIvcXZySmJ6em9FWmRYa3BzTXRYdGlJZ2ZKRFZteWhQRThNL0M2TXBVMGo1L1BacWRPb0ROc0lBOHFJa2d3QUFkMktTc3p5TzF5a1lHZGdiS3k1NTV0TnRIaWFzQVRLZEpVVTNXWUY3S3M1VURIV1FKL20wUGhmVGpDNGRFMDlPcUZremc0VVBGRXh2ZXF0cThBcUVsMkRDWlIxajFqL1RDYzE=
+    vuforiaLicenseKey: AW/QLV3/////AAABmfAkSMVElUYcjB8YfXkryLZ94pq/EWYAsHfy2hf4+2XRPGbyPFn9w1q0bwyTGSpeNSKQ//wlhYSwZmS44NOrlJo11PKokYUj3sm8u6gyRlMEKu/4HmPORGVzcfEn3w/1AR4/rsBtCmof+PYjjQGKq+4X0x1tfhgVP/SKxhNJTp2qZ6pf2byLAgFn7ukDWi3x7jYm8wYXIcwqWHGqVEdus164dDahuOZ5Q+SC/BbwZi8HHzxnUIbvVKtLtszt58uB2QA862OG1woICCbOaq8uG51H4gbT0M4H+AFX8JvQgmxt5EV2Ri/RCCHlBqPtxdoL0VPDcDGC1nRl5AqsYcVrK5h0+loDLt5JTxa+75UAcLuR
+    ufoLicenseKey: QVpNK2lSci8vLy8vQUFBQUtMZzhvRUdNbEVvbnJQR0ZKTS8xUERGcndVdEhZbTdVREczODY1cUhEc0s1WEsxL1JiQ2RLRlR2YXJJNVJOL0NPNXRON1FzbHRkWU5zdXgxeHpLRWU5M2cxbHNIRUtIU1dPend4a0kydzJiTi8xVWxxditaU1ZTT2wwTEJHdElUMS8xcnR4cDNMTCtTS3phaDU2Vk9IOHpBUUxHbStlY1EwMFhSbHQvNzdhbldhUk1oRDJhcUtlcld1d3hzYzJDY1dmQTIrMExBdU4xejUyd1FTZTBRcnJVaS9ObWhPTGxHL3F6TkI3b2t3MXZoQnpOZzlVVmJWOS9VT1JGT0JCWEVKcy9BV1FQZDZnSTNYZVYvdm1ldVpTNzg5cUtOSnhlODlQc3YxcnVLVHRrdWY2L3B5eTJ5eGx2V20rRWZ2UmliUDk1ZHY3R0N1azFJZTlQbmFwZkxVK0YxYUhvYmlwQW9MZE1KclNpZnQvcjA=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
+    maxSimultaneousImageTargets: 4
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
@@ -24,11 +24,11 @@ MonoBehaviour:
   digitalEyewear:
     cameraOffset: 0.06
     distortionRenderingLayer: 31
-    eyewearType: 2
+    eyewearType: 0
     stereoFramework: 0
     seeThroughConfiguration: 0
-    viewerName: Cardboard v1
-    viewerManufacturer: Google
+    viewerName: 
+    viewerManufacturer: 
     useCustomViewer: 0
     customViewer:
       Version: 0
@@ -44,11 +44,9 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-    - VuforiaMars_Images
-    - VuforiaMars_VuMark
+    - AR_minigame
     dataSetsToActivate:
-    - VuforiaMars_Images
-    - VuforiaMars_VuMark
+    - AR_minigame
   videoBackground:
     clippingMode: 0
     numDivisions: 2
@@ -57,11 +55,11 @@ MonoBehaviour:
     matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
-    autoInitTracker: 1
-    autoStartTracker: 1
-    trackingMode: 1
+    autoInitTracker: 0
+    autoStartTracker: 0
+    trackingMode: 0
     posePrediction: 0
-    modelCorrectionMode: 2
+    modelCorrectionMode: 0
     modelTransformEnabled: 0
     modelTransform: {x: 0, y: 0.1, z: -0.1}
   smartTerrain:

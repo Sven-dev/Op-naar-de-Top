@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    public Transform StableObject;
-    public Transform ARObject;
-    public bool Tapped;
-    private Rigidbody rb; 
+    private Transform ARObject;
+    private Rigidbody rb;
 
 	// Use this for initialization
 	void Start ()
@@ -15,22 +13,16 @@ public class Mover : MonoBehaviour
         GetComponent<Rigidbody>();
         rb = GetComponent<Rigidbody>();
 	}
-	
 
-    void OnMouseDown()
+    private void OnMouseDown()
     {
-        Tapped = true;
         transform.parent = ARObject;
-
         rb.AddForce(Vector3.forward * 35);
     }
 
-    private void OnTriggerEnter(Collider other)
+    //Sets the variables when the object is spawned
+    public void SetVariables(Transform arobject)
     {
-        if (other.tag == "Goal")
-        {
-            print("Goal!");
-            
-        }
+        ARObject = arobject;
     }
 }

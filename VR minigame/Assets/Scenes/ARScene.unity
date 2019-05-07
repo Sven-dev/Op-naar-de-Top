@@ -2120,6 +2120,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114629695277395290, guid: 42559b0f83970ee4791c087cfe0500d1,
+        type: 2}
+      propertyPath: ARObject
+      value: 
+      objectReference: {fileID: 1189810463}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42559b0f83970ee4791c087cfe0500d1, type: 2}
   m_IsPrefabParent: 0

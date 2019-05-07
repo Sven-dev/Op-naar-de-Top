@@ -28,4 +28,13 @@ public class Mover : MonoBehaviour
         Tapped = true;
         transform.parent = ARObject;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Goal")
+        {
+            print("Goal!");
+            
+        }
+    }
 }

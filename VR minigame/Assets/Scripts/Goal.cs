@@ -13,4 +13,9 @@ public class Goal : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void Feedback()
+    {
+
+    }
 }

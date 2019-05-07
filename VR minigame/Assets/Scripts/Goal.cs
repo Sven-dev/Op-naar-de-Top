@@ -16,7 +16,7 @@ public class Goal : MonoBehaviour {
         {
             Score = +1;
             ScoreText.text = Score.ToString();
-
+            Destroy(other.gameObject, 1);
         }
     }
 

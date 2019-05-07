@@ -1163,7 +1163,7 @@ GameObject:
   - component: {fileID: 421678437}
   - component: {fileID: 421678438}
   m_Layer: 5
-  m_Name: Sphere
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1273,6 +1273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 497138450}
   - component: {fileID: 497138451}
+  - component: {fileID: 497138452}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Goal
@@ -1311,6 +1312,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0721142, y: 3.1000926, z: 3.9604661}
   m_Center: {x: 0.47776482, y: 0.82441765, z: -0.0049902494}
+--- !u!114 &497138452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 497138449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2a06f15c627d24ca88d49659afb762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreText: {fileID: 1396963169}
+  Score: 0
 --- !u!1 &544012508
 GameObject:
   m_ObjectHideFlags: 0

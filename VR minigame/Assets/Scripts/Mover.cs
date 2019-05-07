@@ -7,26 +7,22 @@ public class Mover : MonoBehaviour
     public Transform StableObject;
     public Transform ARObject;
     public bool Tapped;
+    private Rigidbody rb; 
 
 	// Use this for initialization
 	void Start ()
     {
-		
+        GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
 	}
 	
-	// Update is called once per frame
-	void Update ()
-    {
-        if (Tapped)
-        {
-            transform.Translate(Vector3.forward * Time.deltaTime);
-        }
-	}
 
     void OnMouseDown()
     {
         Tapped = true;
         transform.parent = ARObject;
+
+        rb.AddForce(Vector3.forward * 35);
     }
 
     private void OnTriggerEnter(Collider other)

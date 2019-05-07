@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class Goal : MonoBehaviour {
     public Text ScoreText;
     public int Score;
-	// Use this for initialization
-	void Start () {
-		
-	}
+
+    // Use this for initialization
+    void Start() {
+
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Ball")
@@ -20,10 +21,11 @@ public class Goal : MonoBehaviour {
         }
     }
 
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update() {
 
-        
+
 
     }
+
 }

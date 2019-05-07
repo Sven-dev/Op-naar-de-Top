@@ -309,6 +309,8 @@ GameObject:
   - component: {fileID: 79162597}
   - component: {fileID: 79162596}
   - component: {fileID: 79162595}
+  - component: {fileID: 79162598}
+  - component: {fileID: 79162599}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -343,7 +345,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c9119307af9d1e64dbec5b54e1714b83, type: 2}
+  - {fileID: 2100000, guid: 11729fa27a679db4fbeedeff9e7512fe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -384,6 +386,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 79162593}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &79162598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 79162593}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.22305, y: 1.6720392, z: 1.0929732}
+  m_Center: {x: -0.02106469, y: -0.30781513, z: -0.61739874}
+--- !u!114 &79162599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 79162593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 803ede91576cc9946bdab3630b0c86e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &98436059
 GameObject:
   m_ObjectHideFlags: 0

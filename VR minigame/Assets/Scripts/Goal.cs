@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Goal : MonoBehaviour {
     public Text ScoreText;
     public int Score;
+    public AudioSource Bounce;
 
     // Use this for initialization
     void Start() {
@@ -13,11 +14,13 @@ public class Goal : MonoBehaviour {
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Ball")
+        if (other.gameObject.tag == "Ball")
         {
-            Score = +1;
+            Score += 1;
             ScoreText.text = Score.ToString();
             Destroy(other.gameObject, 0.5f);
+            Debug.Log("Collission Detected!");
+            Bounce.Play();
         }
     }
 

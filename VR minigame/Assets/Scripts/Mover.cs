@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    private Transform ARObject;
+    public Transform ARObject;
     private Rigidbody rb;
 
 	// Use this for initialization

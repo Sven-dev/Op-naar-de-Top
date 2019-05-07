@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    private Transform ARObject;
+    public Transform ARObject;
     private Rigidbody rb;
 
 	// Use this for initialization
-	void Start ()
+	void Start()
     {
-        GetComponent<Rigidbody>();
         rb = GetComponent<Rigidbody>();
+        print("RB:" + rb);
 	}
 
     private void OnMouseDown()
     {
         transform.parent = ARObject;
-        rb.AddForce(Vector3.forward * 35);
+        rb.AddForce(Vector3.forward * 150);
+        rb.useGravity = true;
+        tag = "Ball";
     }
 
     //Sets the variables when the object is spawned

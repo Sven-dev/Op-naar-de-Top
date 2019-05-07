@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Goal : MonoBehaviour {
     public Text ScoreText;
     public int Score;
-    public AudioSource Bounce;
 
     // Use this for initialization
     void Start() {
@@ -32,3 +31,9 @@ public class Goal : MonoBehaviour {
     }
 
 }
+
+    public int Score;
+    public AudioSource Bounce;
+
+    // Use this for initialization
+    void Start() {

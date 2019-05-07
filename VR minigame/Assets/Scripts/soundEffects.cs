@@ -8,7 +8,7 @@ public class soundEffects : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Soccer Ball")
+        if (collision.gameObject.name == "Ball")
         {
             Debug.Log("Collission Detected!");
             Bounce.Play();

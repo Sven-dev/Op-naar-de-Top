@@ -16,14 +16,8 @@ public class KeeperAnimation : MonoBehaviour {
         anim = transform.GetChild(0).GetComponent<Animator>();
 
         Walking = false;
-        StartCoroutine(wait());
     }
 
-    IEnumerator wait()   
-    {
-        yield return new WaitForSeconds(5);
-        anim.SetBool("isWalking", true);     
-    }
     //Calls PickRandomSpot() every so often
     IEnumerator Timer()
     {
@@ -52,6 +46,7 @@ public class KeeperAnimation : MonoBehaviour {
     IEnumerator Walk(Transform point)
     {
         Walking = true;
+        anim.SetBool("isWalking", true);
         float delta = 0;
 
         //Walk to x position of point
@@ -75,6 +70,7 @@ public class KeeperAnimation : MonoBehaviour {
             yield return null;
         }
 
+        anim.SetBool("isWalking", false);
         Walking = false;
     }
 }

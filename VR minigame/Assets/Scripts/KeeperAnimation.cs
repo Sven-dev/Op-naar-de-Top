@@ -5,6 +5,7 @@ using UnityEngine;
 public class KeeperAnimation : MonoBehaviour {
 
     public List<Transform> Points;
+    public Transform Origin;
     public float Speed;
     private bool Walking;
 
@@ -40,26 +41,23 @@ public class KeeperAnimation : MonoBehaviour {
     public void PickRandomSpot()
     {
         int walkChance = Random.Range(1, 100);
-        print(walkChance);
         if (walkChance > 75)
         {
             int index = Random.Range(0, Points.Count);
-            StartCoroutine(Walk(Points[index].position));
+            StartCoroutine(Walk(Points[index]));
         }
     }
 
     //Walk to a direction and back
-    IEnumerator Walk(Vector3 point)
+    IEnumerator Walk(Transform point)
     {
-        print("Walking");
         Walking = true;
-        Vector3 origin = transform.position;
         float delta = 0;
 
         //Walk to x position of point
         while(delta < 1)
         {
-            transform.position = new Vector3(Mathf.Lerp(origin.x, point.x, delta), transform.position.y, transform.position.z);
+            transform.position = Vector3.Lerp(Origin.position, point.position, delta);
             delta += Speed * Time.deltaTime;
             yield return null;
         }
@@ -72,7 +70,7 @@ public class KeeperAnimation : MonoBehaviour {
         //Walk back to origin
         while (delta < 1)
         {
-            transform.position = new Vector3(Mathf.Lerp(point.x, origin.x, delta), transform.position.y, transform.position.z);
+            transform.position = Vector3.Lerp(point.position, Origin.position, delta);
             delta += Speed * Time.deltaTime;
             yield return null;
         }

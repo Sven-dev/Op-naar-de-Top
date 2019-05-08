@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallSpawner : MonoBehaviour {
-
+public class BallSpawner : MonoBehaviour
+{
     public Mover Ball;
     public Transform ARObject;
 

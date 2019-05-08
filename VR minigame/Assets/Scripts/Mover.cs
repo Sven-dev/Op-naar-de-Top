@@ -11,7 +11,6 @@ public class Mover : MonoBehaviour
 	void Start()
     {
         rb = GetComponent<Rigidbody>();
-        print("RB:" + rb);
 	}
 
     private void OnMouseDown()

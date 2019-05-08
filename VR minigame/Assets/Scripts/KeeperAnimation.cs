@@ -11,7 +11,8 @@ public class KeeperAnimation : MonoBehaviour
 
     private Animator anim;
     // Use this for initialization
-	void Start () {
+	void Start ()
+    {
         StartCoroutine(Timer());
         anim = transform.GetChild(0).GetComponent<Animator>();
 
@@ -35,7 +36,6 @@ public class KeeperAnimation : MonoBehaviour
     public void PickRandomSpot()
     {
         int walkChance = Random.Range(1, 100);
-        print(walkChance);
         if (walkChance > 66)
         {
             int index = Random.Range(0, Points.Count);
